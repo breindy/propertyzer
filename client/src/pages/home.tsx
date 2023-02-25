@@ -9,8 +9,6 @@ import {
   PropertyReferrals,
   TotalRevenue,
 } from "../components/charts";
-import { PropertyCard } from "../components/common";
-
 const Home = () => {
   return (
     <Box>
@@ -55,9 +53,9 @@ const Home = () => {
         <PropertyReferrals />
       </Stack>
 
-      <Stack mt="25px" width="100%" direction={{ xs: "column", lg: "row" }}>
+      {/* <Stack mt="25px" width="100%" direction={{ xs: "column", lg: "row" }}>
         <PropertyCard />
-      </Stack>
+      </Stack> */}
     </Box>
   );
 };
