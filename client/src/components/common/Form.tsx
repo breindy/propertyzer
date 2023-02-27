@@ -144,7 +144,7 @@ const Form = ({
                 id="outlined-basic"
                 color="info"
                 variant="outlined"
-                {...register("title", { required: true })}
+                {...register("price", { required: true })}
               />
             </FormControl>
           </Stack>
@@ -188,16 +188,15 @@ const Form = ({
                 }}
               >
                 Upload *
+                <input
+                  hidden
+                  accept="image/*"
+                  type="file"
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    handleImageChange(e.target.files![0]);
+                  }}
+                />
               </Button>
-              <input
-                hidden
-                accept="image/*"
-                type="file"
-                onChange={(e) => {
-                  // @ts-ignore
-                  handleImageChange(e.target.files[0]);
-                }}
-              />
             </Stack>
             <Typography
               fontSize={14}
