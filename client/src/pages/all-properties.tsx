@@ -167,16 +167,16 @@ const AllProperties = () => {
 
       <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
         {allProperties.map((property) => {
-          const { _id, id, title, location, price, photo } = property;
+          const { _id, title, location, price, photo } = property;
           return (
             <PropertyCard
               key={_id}
-              id={id}
+              id={_id}
               title={title}
               price={price}
               location={location}
               photo={photo}
-            ></PropertyCard>
+            />
           );
         })}
       </Box>

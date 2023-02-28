@@ -2,7 +2,7 @@ import express from "express";
 
 import {
   getAllProperties,
-  getPropertyDetails,
+  getPropertyDetail,
   createProperty,
   updateProperty,
   deleteProperty,
@@ -11,7 +11,7 @@ import {
 const router = express.Router();
 
 router.route("/").get(getAllProperties);
-router.route("/:id").get(getPropertyDetails);
+router.route("/:id").get(getPropertyDetail);
 router.route("/").post(createProperty);
 router.route("/:id").put(updateProperty);
 router.route("/:id").delete(deleteProperty);
