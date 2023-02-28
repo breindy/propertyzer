@@ -10,10 +10,12 @@ const CustomButton = ({
   color,
   fullWidth,
   icon,
+  disabled = false,
 }: CustomButtonProps) => {
   return (
     <Button
       type={type === "submit" ? "submit" : "button"}
+      disabled={disabled}
       sx={{
         flex: fullWidth ? 1 : "unset",
         padding: "10px 15px",

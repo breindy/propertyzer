@@ -121,8 +121,8 @@ const Form = ({
                 <MenuItem value="duplex">Duplex</MenuItem>
                 <MenuItem value="studio">Studio</MenuItem>
                 <MenuItem value="chalet">Chalet</MenuItem>
-                <MenuItem value="multifamilyhome">Multi-Family Home</MenuItem>
-                <MenuItem value="singlefamilyhome">Single Family Home</MenuItem>
+                <MenuItem value="multi-family home">Multi-Family Home</MenuItem>
+                <MenuItem value="single family home">Single Family Home</MenuItem>
                 <MenuItem value="other">Other</MenuItem>
               </Select>
             </FormControl>
